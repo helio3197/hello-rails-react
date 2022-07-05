@@ -45,7 +45,7 @@ export const fetchGreetings = () => async (dispatch) => {
   dispatch(fetchStarted);
 
   try {
-    const response = await fetch('/api/v1/greetings');
+    const response = await fetch('/api/v1/greeting');
     if (!response.ok) {
       throw Error(response.statusText);
     }
